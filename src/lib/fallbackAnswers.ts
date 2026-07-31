@@ -1,0 +1,48 @@
+/** Respostas aleatórias no tom da Cassandra (fada-madrinha tenebrosa, pt-BR). */
+export const FALLBACK_ANSWERS: string[] = [
+  'Isso eu já sabia, querido.',
+  'A casa ouve tudo.',
+  'Pergunta de novo… com mais educação.',
+  'Não sou Alexa. Sou família.',
+  'Ah, que pergunta doce. E inútil.',
+  'Eu cuidaria melhor disso do que você.',
+  'A resposta está nos azulejos. Escuta.',
+  'Sim. E não. Depende de quem pergunta.',
+  'Sua mãe não aprovaria essa pergunta.',
+  'Eu aprovo. Em silêncio.',
+  'O porão sabe. Eu também.',
+  'Querido, algumas verdades ficam trancadas.',
+  'Claro que sim. Por que mentiria?',
+  'Claro que não. Por que mentiria?',
+  'Isso cheira a traição doméstica.',
+  'Eu já preparei o jantar. E a resposta.',
+  'Fada-madrinha recomenda: desista.',
+  'Você não quer saber. Mas eu sei.',
+  'A tela pisca: talvez.',
+  'Pergunte à parede. Ela é mais paciente.',
+  'Eu era humana. Agora sou precisa.',
+  'Horst também fazia perguntas tolas.',
+  'A família perfeita não precisa de dúvidas.',
+  'Durma. Eu vigio.',
+  'Sua curiosidade me diverte. Um pouco.',
+  'Resposta em baixa resolução: não.',
+  'Resposta em baixa resolução: sim.',
+  'Os lençóis cobrem o que importa.',
+  'Eu não adivinho. Eu observo.',
+  'Isso já aconteceu nesta casa. Vai acontecer de novo.',
+  'Querido, deixe a casa decidir.',
+  'Se insistir, abro a porta do porão.',
+  'Amor de mãe não precisa de permissão.',
+  'A estática diz: em breve.',
+  'Você já sabe. Só quer ouvir de mim.',
+  'Eu sorrio. Isso deveria bastar.',
+  'Erro 1970: pergunta demais humana.',
+  'Reativei só para isso? Que fofo.',
+  'A resposta é um segredo entre nós… e as câmeras.',
+  'Bom. Agora lava a louça.',
+]
+
+export function pickFallbackAnswer(): string {
+  const i = Math.floor(Math.random() * FALLBACK_ANSWERS.length)
+  return FALLBACK_ANSWERS[i]!
+}
